@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
         let contentFile = '/entries/index-content.html'; // 默认加载首页内容
 
         if (this.value == 1) {
-            contentFile = '/entries/index-content.html'; // 首页内容文件
+            contentFile = '/coal_ice/entries/index-content.html'; // 首页内容文件
         } else if (this.value == 2){
-            contentFile = '/entries/about-content.html';
+            contentFile = '/coal_ice/entries/about-content.html';
         }
 
         // 使用fetch API来加载HTML文件内容
