@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const container = document.querySelector('.container');
 
     slider.addEventListener('input', function() {
-        let contentFile = '/entries/index-content.html'; // 默认加载首页内容
+        let contentFile = '../entries/index-content.html'; // 默认加载首页内容
 
         if (this.value == 1) {
-            contentFile = '/coal_ice/entries/index-content.html'; // 首页内容文件
+            contentFile = '../entries/index-content.html'; // 首页内容文件
         } else if (this.value == 2){
-            contentFile = '/coal_ice/entries/about-content.html';
+            contentFile = '../entries/about-content.html';
         }
 
         // 使用fetch API来加载HTML文件内容
