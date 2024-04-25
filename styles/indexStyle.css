@@ -1,9 +1,9 @@
 body, h1, p {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     /*Background image set up*/
-    background-image: url('/coal_ice/img/background.png');
+    background-image: url('/img/background.png');
     background-size: cover; /* to cover entire screen*/
     background-position: center; 
     background-repeat: no-repeat; 
@@ -21,13 +21,13 @@ body, h1, p {
 h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    font-weight: 700; /* bold */
+    font-weight: 800; /*Extra bold */
 }
 
 .date-range {
     font-size: 24px;
     margin-bottom: 40px;
-    font-weight: 400; /* Normal */
+    font-weight: 200; /* Extra light */
 }
 
 .container {
@@ -45,7 +45,7 @@ h1 {
 .contact-info p {
     margin: 5px 0; /* distance between lines */
     font-size: 18px;
-    font-weight: 400; /* Normal */
+    font-weight: 300; /* light */
 }
 
 .slider-container {
@@ -90,13 +90,70 @@ h1 {
 h2 {
     font-size: 56px;
     margin-bottom: 60px;
-    font-weight: 700; /* bold */
+    font-weight: 800; /* extra bold */
 }
 
 .about-content{
         font-size: 28px;
         margin-bottom: 60px;
-        font-weight: 400; /* Normal */
+        font-weight: 300; /* light */
         line-height: 40px;
 }
 
+/* For Artist Page*/
+.content-text {
+    margin-top: 150px; /* To make sure the text is below header text */
+    display: flex; 
+}
+
+h3 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 800; /* extra bold */
+}
+
+.artist-content{
+    flex: 1; /* make the p tags align side by side */
+    margin-left: 50px; 
+    margin-right: 50px; 
+    font-size: 25px;
+    font-weight: 300; /* light */
+    line-height: 35px;
+}
+
+/* For Image Contents*/
+.image-container {
+    position: relative;
+    overflow: hidden; /* hide the overflow image */
+    width: 100vw; 
+    height: 100vh; 
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto; 
+    min-height: 100%; 
+    position: absolute; 
+    top: 0; /* align image's top with window's top */
+    left: 50%; /* put image at the middle */
+    transform: translateX(-50%); 
+}
+
+.image-text {
+    position: absolute; 
+    bottom: 20%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100%; 
+    padding: 0 20px; 
+    box-sizing: border-box; 
+}
+
+.image-text-content {
+    text-align: left;
+    max-width: 600px; 
+    margin: 0 auto; 
+    font-size: 20px;
+    font-weight: 600; /* semi bold */
+    line-height: 25px;
+}

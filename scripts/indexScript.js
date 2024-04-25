@@ -1,18 +1,23 @@
 // 在 indexScript.js 文件中
+const preFix=''
 document.addEventListener('DOMContentLoaded', function() {
     const slider = document.getElementById('myRange');
     const container = document.querySelector('.container');
 
     slider.addEventListener('input', function() {
-        let contentFile = '/coal_ice/entries/index-content.html'; // 默认加载首页内容
+        let contentFile = preFix+'entries/index-content.html'; // load first page as default
 
         if (this.value == 1) {
-            contentFile = '/coal_ice/entries/index-content.html'; // 首页内容文件
+            contentFile = preFix+'entries/index-content.html'; // index content
         } else if (this.value == 2){
-            contentFile = '/coal_ice/entries/about-content.html';
+            contentFile = preFix+'entries/about-content.html';
+        } else if (this.value == 3){
+            contentFile = preFix+'entries/artist-content.html';
+        } else if (this.value == 4){
+            contentFile = preFix+'entries/image-content-1.html';
         }
 
-        // 使用fetch API来加载HTML文件内容
+        // use fetch to load html content
         fetch(contentFile)
             .then(response => response.text())
             .then(html => {
