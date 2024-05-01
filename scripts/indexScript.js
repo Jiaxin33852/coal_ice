@@ -1,6 +1,6 @@
 // 在 indexScript.js 文件中
-// const preFix='/coal_ice/'
-const preFix=''
+const preFix='/coal_ice/'
+// const preFix=''
 document.addEventListener('DOMContentLoaded', function() {
     const slider = document.getElementById('myRange');
     const container = document.querySelector('.container');

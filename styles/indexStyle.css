@@ -4,7 +4,7 @@ body, h1, p {
     font-family: 'Montserrat', sans-serif;
     /*Background image set up*/
     /* background-image: url('/coal_ice/img/background.png'); */
-    background-image: url('/img/background.png');
+    background-image: url('/coal_ice/img/background.png');
     background-size: cover; /* to cover entire screen*/
     background-position: center; 
     background-repeat: no-repeat; 
