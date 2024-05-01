@@ -3,7 +3,8 @@ body, h1, p {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     /*Background image set up*/
-    background-image: url('/coal_ice/img/background.png');
+    /* background-image: url('/coal_ice/img/background.png'); */
+    background-image: url('/img/background.png');
     background-size: cover; /* to cover entire screen*/
     background-position: center; 
     background-repeat: no-repeat; 
@@ -94,10 +95,10 @@ h2 {
 }
 
 .about-content{
-        font-size: 28px;
+        font-size: 23px;
         margin-bottom: 60px;
         font-weight: 300; /* light */
-        line-height: 40px;
+        line-height: 35px;
 }
 
 /* For Artist Page*/
@@ -116,9 +117,9 @@ h3 {
     flex: 1; /* make the p tags align side by side */
     margin-left: 50px; 
     margin-right: 50px; 
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 300; /* light */
-    line-height: 35px;
+    line-height: 32px;
 }
 
 /* For Image Contents*/
@@ -141,7 +142,7 @@ h3 {
 
 .image-text {
     position: absolute; 
-    bottom: 20%;
+    bottom: 12%;
     left: 50%; 
     transform: translateX(-50%); 
     width: 100%; 
