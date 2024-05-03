@@ -46,4 +46,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.error('Failed to load content:', error);
             });
     });
+
+    //color filter event
+    const apiKey = ''; //need to sign up and get api key later
+    const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=New%20York&appid=${apiKey}&units=metric`;
+
+    fetch(weatherUrl)
+        .then(response => response.json())
+        .then(data => {
+            const temp = data.main.temp;
+            const weatherFilter = document.getElementById('weatherFilter');
+            if (temp >= 25) {
+                weatherFilter.style.backgroundColor = 'rgba(255, 0, 0, 0.3)'; // using red if temp is hot
+            } else if (temp <= 10) {
+                weatherFilter.style.backgroundColor = 'rgba(0, 0, 255, 0.3)'; // using blue if temp is cold
+            } else {
+                weatherFilter.style.backgroundColor = 'rgba(0, 255, 0, 0.3)'; // using green if temp is medium
+            }
+        })
+        .catch(error => {
+            console.error('Failed to load weather data:', error);
+        });
 });
