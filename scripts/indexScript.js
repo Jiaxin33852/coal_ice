@@ -48,13 +48,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     //color filter event
-    const apiKey = ''; //need to sign up and get api key later
+    const apiKey = 'ec2286d04b47fb98645ebb09c617b846'; //need to sign up and get api key later
     const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=New%20York&appid=${apiKey}&units=metric`;
 
     fetch(weatherUrl)
         .then(response => response.json())
         .then(data => {
             const temp = data.main.temp;
+            console.log(temp);
             const weatherFilter = document.getElementById('weatherFilter');
             if (temp >= 25) {
                 weatherFilter.style.backgroundColor = 'rgba(255, 0, 0, 0.3)'; // using red if temp is hot
