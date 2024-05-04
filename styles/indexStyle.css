@@ -138,6 +138,7 @@ h3 {
     top: 0; /* align image's top with window's top */
     left: 50%; /* put image at the middle */
     transform: translateX(-50%); 
+    transition: filter 0.5s ease;
 }
 
 .image-text {
@@ -157,16 +158,5 @@ h3 {
     font-size: 20px;
     font-weight: 600; /* semi bold */
     line-height: 25px;
-}
-
-/* for color filter*/
-.weather-filter {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    pointer-events: none; /* mouse click event can go through the filter */
 }
 
