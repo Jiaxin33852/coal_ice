@@ -2,9 +2,6 @@ body, h1, p {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    /*Background image set up*/
-    background-image: url('/coal_ice/img/background.png');
-    /* background-image: url('/img/background.png'); */
     background-size: cover; /* to cover entire screen*/
     background-position: center; 
     background-repeat: no-repeat; 
@@ -103,7 +100,7 @@ h2 {
 
 /* For Artist Page*/
 .content-text {
-    margin-top: 150px; /* To make sure the text is below header text */
+    margin-top: 0px; /* To make sure the text is below header text */
     display: flex; 
 }
 
@@ -115,8 +112,8 @@ h3 {
 
 .artist-content{
     flex: 1; /* make the p tags align side by side */
-    margin-left: 50px; 
-    margin-right: 50px; 
+    margin-left: 100px; 
+    margin-right: 0px; 
     font-size: 23px;
     font-weight: 300; /* light */
     line-height: 32px;

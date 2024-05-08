@@ -3,7 +3,7 @@ const preFix='/coal_ice/'
 document.addEventListener('DOMContentLoaded', function() {
     const slider = document.getElementById('myRange');
     const container = document.querySelector('.container');
-
+    applyWeatherBasedFilter();
     function applyWeatherBasedFilter() {
         const apiKey = 'ec2286d04b47fb98645ebb09c617b846'; // api key
         const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=New%20York&appid=${apiKey}&units=metric`;
@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     console.error('Image not found');
                 }
+                applyBackgroundFilter(temp);
             })
             .catch(error => {
                 console.error('Failed to load weather data:', error);
@@ -41,26 +42,20 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (this.value == 3) {
             contentFile = preFix + 'entries/artist-content.html';
         } else if (this.value == 4) {
-            contentFile = preFix + 'entries/image-content-1.html';
-        } else if (this.value == 5) {
-            contentFile = preFix + 'entries/image-content-2.html';
-        } else if (this.value == 6) {
             contentFile = preFix + 'entries/image-content-3.html';
-        } else if (this.value == 7) {
+        } else if (this.value == 5) {
             contentFile = preFix + 'entries/image-content-4.html';
-        } else if (this.value == 8) {
+        } else if (this.value == 6) {
             contentFile = preFix + 'entries/image-content-5.html';
-        } else if (this.value == 9) {
+        } else if (this.value == 7) {
             contentFile = preFix + 'entries/image-content-6.html';
-        } else if (this.value == 10) {
-            contentFile = preFix + 'entries/image-content-7.html';
-        } else if (this.value == 11) {
+        } else if (this.value == 8) {
             contentFile = preFix + 'entries/image-content-8.html';
-        } else if (this.value == 12) {
+        } else if (this.value == 9) {
             contentFile = preFix + 'entries/image-content-9.html';
-        } else if (this.value == 13) {
+        } else if (this.value == 10) {
             contentFile = preFix + 'entries/image-content-10.html';
-        }
+        } 
 
         // load content and apply color filter
         fetch(contentFile)
