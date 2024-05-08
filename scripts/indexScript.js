@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const image = document.querySelector('.image-container img');
                 if (image) { // make sure image exist
                     if (temp >= 25) {
-                        image.style.filter = 'hue-rotate(0deg) brightness(100%)'; // hot weather, red color
+                        image.style.filter = 'hue-rotate(-30deg) brightness(100%)'; // hot weather, red color
                     } else if (temp <= 10) {
                         image.style.filter = 'hue-rotate(240deg) brightness(100%)'; // cold weather，blue color
                     } else {
