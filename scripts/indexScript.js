@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     console.error('Image not found');
                 }
-                applyBackgroundFilter(temp);
             })
             .catch(error => {
                 console.error('Failed to load weather data:', error);
